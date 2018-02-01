@@ -11,7 +11,7 @@ phases:
 
   build:
     commands:
-       - echo 2222222
+       - echo 99999999
 
 artifacts:
   files:
