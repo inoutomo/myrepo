@@ -5,7 +5,7 @@ phases:
     commands:
       - printenv
       - ls -la
-      - git log --pretty=format:"%cd %h %cn %s"
+      - git diff --name-status ${CODEBUILD_SOURCE_VERSION}^
 
   pre_build:
     commands:
