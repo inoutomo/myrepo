@@ -4,6 +4,8 @@ phases:
   install:
     commands:
       - printenv
+      - ls -la
+      - git log --pretty=format:"%cd %h %cn %s"
 
   pre_build:
     commands:
