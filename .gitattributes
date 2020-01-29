@@ -1,7 +1,0 @@
-* text=auto
-*.txt		text
-lf.txt		text eol=lf
-crlf.txt	text eol=crlf
-*.vcproj	text eol=crlf
-*.sh		text eol=lf
-*.jpg		-text
