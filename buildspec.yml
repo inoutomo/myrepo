@@ -7,7 +7,6 @@ phases:
       - printenv
       - ls -la
       - file *
-      - git diff --name-status ${CODEBUILD_SOURCE_VERSION}^
       - |
         if [ -d ".git" ]
         then
