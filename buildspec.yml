@@ -3,26 +3,13 @@ version: 0.2
 phases:
   install:
     commands:
-      - cat buildspec.yml
       - printenv
-      - ls -la
-      - file *
-      - |
-        if [ -d ".git" ]
-        then
-          git diff --name-status ${CODEBUILD_SOURCE_VERSION}^
-        else
-          echo "No git local repository..."
-        fi
-
   pre_build:
     commands:
        - echo 11111111
-
   build:
     commands:
        - echo 2222222
-
 artifacts:
   files:
     - '**/*'
